@@ -9,8 +9,15 @@ public class CalculatorImpl implements Calculator {
         return 0;
     }
 
+    //Method to get max value from arrayList
     public int getMaximum() {
-        return 0;
+        int max=values.get(0);
+        for(int i=0;i<values.size();i++){
+            if(max<values.get(i)){
+                max=values.get(i);
+            }
+        }
+        return max;
     }
 
     //Method to get min value from arrayList
