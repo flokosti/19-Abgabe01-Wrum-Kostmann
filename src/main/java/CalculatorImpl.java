@@ -3,18 +3,22 @@ import java.util.ArrayList;
 public class CalculatorImpl implements Calculator {
 
     //Arraylist to save values
-    ArrayList<Integer> values=new ArrayList<Integer>();
+    ArrayList<Integer> values = new ArrayList<Integer>();
 
     public int sum() {
-        return 0;
+        int sum = 0;
+        for (int i = 0; i < values.size(); i++) {
+            sum += values.get(i);
+        }
+        return sum;
     }
 
     //Method to get max value from arrayList
     public int getMaximum() {
-        int max=values.get(0);
-        for(int i=0;i<values.size();i++){
-            if(max<values.get(i)){
-                max=values.get(i);
+        int max = values.get(0);
+        for (int i = 0; i < values.size(); i++) {
+            if (max < values.get(i)) {
+                max = values.get(i);
             }
         }
         return max;
@@ -24,8 +28,8 @@ public class CalculatorImpl implements Calculator {
     public int getMinimum() {
 
         int min = values.get(0);
-        for (int i = 0; i < values.size(); i++){
-            if (min > values.get(i)){
+        for (int i = 0; i < values.size(); i++) {
+            if (min > values.get(i)) {
                 min = values.get(i);
             }
         }
