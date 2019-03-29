@@ -5,6 +5,7 @@ public class CalculatorImpl implements Calculator {
     //Arraylist to save values
     ArrayList<Integer> values = new ArrayList<Integer>();
 
+    //Method to get sum from all values from arrayList
     public int sum() {
         int sum = 0;
         for (int i = 0; i < values.size(); i++) {
