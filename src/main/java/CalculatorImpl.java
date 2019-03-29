@@ -13,8 +13,16 @@ public class CalculatorImpl implements Calculator {
         return 0;
     }
 
+    //Method to get min value from arrayList
     public int getMinimum() {
-        return 0;
+
+        int min = values.get(0);
+        for (int i = 0; i < values.size(); i++){
+            if (min > values.get(i)){
+                min = values.get(i);
+            }
+        }
+        return min;
     }
 
     //Method to add int values to arraylist

@@ -8,11 +8,11 @@ public class Main {
 		calc.addValue(20);	// currently highest number
 		calc.addValue(4);	// currently lowester number
 		calc.addValue(16);
-		
+
 		// add other integers
 		
 		// output lowest number 
-		
+		System.out.println("Lowest number: "+calc.getMinimum());
 		// output highest number
 		
 		// output sum of all numbers
